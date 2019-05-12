@@ -1,0 +1,25 @@
+{
+  "extends": [
+    "tslint:latest",
+    "tslint-react",
+    "tslint-config-prettier"
+  ],
+  "rules": {
+    // override tslint-react rules here
+    "jsx-wrap-multiline": false,
+    "no-submodule-imports": false,
+    "jsx-boolean-value": false,
+    "jsx-no-lambda": false,
+    "no-empty": false,
+    "no-implicit-dependencies": [true, "dev"],
+    "member-access": false,
+    "no-unused-expression": false,
+    "array-type": false
+  },
+  "linterOptions": {
+    "exclude": [
+      "node_modules/**/*.ts",
+      "src/serviceWorker.ts"
+    ]
+  }
+}
